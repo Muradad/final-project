@@ -1,0 +1,16 @@
+form{
+    .btnSubs{
+        background-color: gray;
+        &:hover{
+            background-color: rgb(62, 61, 61);
+            transition: 0.7s;
+        }
+    }
+    .inputSubs{
+       outline: none;
+       border: none;
+       border-bottom: 1px solid black !important;
+       border-radius: 0px;
+       
+    }
+}

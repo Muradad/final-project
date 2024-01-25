@@ -1,0 +1,59 @@
+
+.animated-image-container {
+   position: relative;
+   overflow: hidden;
+   height: 100vh;
+
+   .overflow-effect {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #4040d838;
+      width: 100%;
+      transition: opacity 1s ease;
+      pointer-events: none;
+
+   }
+
+}
+
+.animated-image {
+   position: relative;
+   width: 80%;
+}
+
+.ove {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   position: relative;
+
+}
+
+
+@media screen and (max-width: 768px) {
+   .sliderContent{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  top:80%;
+  text-align: center;
+   }
+ .moduleContent{
+display: none;
+ }
+ .modulHomeImg{
+   display: none !important;
+ }
+ .welcome-modal{
+   display: none !important;
+ }
+ .animated-image{
+   width: 100% !important;
+ }
+}

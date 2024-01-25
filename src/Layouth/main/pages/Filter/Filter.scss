@@ -1,0 +1,100 @@
+#shopSearchInput{
+    border-bottom: 1px solid black;
+    border-radius: 0px;
+    line-height: 30px;
+}
+
+.accordion {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+  }
+  
+  .accordion.open {
+    height: 80px; /* Açıkken gösterilecek yükseklik */
+  }
+  
+  .accordion-header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .accordion-content {
+    padding: 10px;
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media (max-width: 1023px) {
+  .filterasiya {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1015px) {
+  .sidebarFilter {
+    width: 50% !important;
+    color: black !important;
+   display: block !important;
+   background-color: white !important;
+
+  }
+  .filterasiya{
+    display: block !important;
+    color: black !important;
+  }
+}
+@media (max-width: 800px) {
+  .DESKTOPfILTER{
+    display: none !important;
+  
+  }
+  
+}
+@media (max-width: 600px) {
+  #ressearch{
+   display: none !important;
+  }
+}
+@media (max-width: 1023px) {
+  .DESKTOPfILTER{
+    display: none !important;
+  }
+}
+
+
+
+.notfilter{
+  display: none !important;
+}
+
+@media (max-width: 1022px) {
+  .notfilter{
+    display: block !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .sidebarFilter{
+    width: 70% !important;
+  }
+}
+@media (max-width:400px) {
+  .sidebarFilter{
+    width: 80% !important;
+  }
+}
+@media (max-width:340px) {
+  .sidebarFilter{
+    width: 100% !important;
+  }
+}
+
+
+

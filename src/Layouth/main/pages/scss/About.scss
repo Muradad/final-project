@@ -1,0 +1,27 @@
+.aboutImg {
+    margin-right: 20px; 
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  
+    &:hover {
+      transform: scale(0.9);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transform: translateX(50px)  perspective(250px); // Burada perspective eklenmiştir.
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  
+  .aboutContent {
+    max-width: 600px;
+  
+  }
+
+  
+  

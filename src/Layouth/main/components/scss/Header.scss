@@ -1,0 +1,187 @@
+/* after effect */
+.hover-underline {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+}
+
+
+.hover-underline:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 7px;
+    background-color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Örnek: Hafif bir gölge ekleme */
+    transition: 0.5s;
+}
+
+.hover-underline:hover::after {
+    width: 100%;
+    bottom: 4px;
+}
+
+.hover-underline:hover:after {
+    background-position: 200% 0;
+}
+
+.XHover {
+    transition: transform 0.5s ease;
+}
+
+.XHover:hover {
+    transform: rotate(180deg);
+}
+
+
+/* hamburger scale */
+
+.GiHamburgerMenu {
+    transition: transform 0.3s ease;
+}
+
+.GiHamburgerMenu:hover {
+    transform: scale(1.3);
+    color: #000;
+}
+
+
+@media (max-width: 968px) {
+    .navUl {
+
+        font-size: 15px;
+
+    }
+}
+
+@media (max-width: 865px) {
+    .NavbarNav {
+        .navUl a {
+            display: flex;
+            justify-content: space-evenly;
+            width: 0px;
+        }
+
+        padding: 0px 150px;
+    }
+}
+
+
+
+
+@media (max-width: 974px) {
+    .NavbarNav {
+        .navUl a {
+            display: flex;
+            justify-content: space-between;
+            width: 25px;
+        }
+
+        padding: 0px 150px;
+    }
+}
+
+@media (max-width: 920px) {
+    .NavbarNav {
+        .navUl a {
+            display: flex;
+            justify-content: space-between;
+            width: 20px;
+        }
+
+        padding: 0px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .GiHamburgerMenu {
+        display: none !important;
+    }
+    .IconsNavbarItems {
+        display: flex !important;
+        justify-content: flex-end;
+        width: 100%;
+    }
+}
+
+.MenuBarsNav {
+    display: none; 
+  
+    @media (max-width: 768px) {
+      display: flex; 
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px; 
+    }
+  
+    .logo {
+      a {
+        text-decoration: none; 
+        color: inherit; 
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  
+    .HamburgerNavMenuSide {
+    }
+  }
+  
+  .FaTimes {
+    transition: transform 0.5s ease;
+}
+
+.FaTimes:hover {
+    transform: rotate(180deg);
+}
+
+
+
+.FaBars {
+    transition: transform 0.3s ease;
+}
+
+.FaBars:hover {
+    transform: scale(0.9);
+    color: #000;
+    overflow: hidden;
+}
+
+.FaBars{
+    display: none;
+}
+.FaTimes{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .FaBars{
+        display: block;
+    }
+    .FaTimes{
+        display: block;
+    }
+}
+.MdClose{
+    transform: scale(1.2);
+    transition: 0.7s;
+    background: none;
+}
+
+.MdClose:hover{
+  transform: rotate(180deg);
+  color: white;
+}
+
+
+// .MenimIMgim{
+//     transition: 0.7s;
+// }
+
+// .MenimIMgim:hover{
+//     transform: rotate(60deg);
+// }
