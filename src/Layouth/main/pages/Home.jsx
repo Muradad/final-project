@@ -36,7 +36,7 @@ function Home() {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       <Slider />
       <ModuleHome />
-      <div className='flex justify-center md:space-x-10 mt-20 mb-20 flex-wrap'>
+      <div className='flex justify-center items-center flex-wrap'>
         {product.map((item) => (
           <Cart key={item.id} product={item} />
 

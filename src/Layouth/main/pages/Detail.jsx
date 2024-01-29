@@ -36,9 +36,7 @@ function Detail() {
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
-  if (!product) {
-    return <div>Loading...</div>; // or handle the loading state appropriately
-  }
+ 
 
   // Check if product.images is defined and has at least one element
 
